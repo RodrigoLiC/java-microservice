@@ -8,9 +8,9 @@ WORKDIR /app
 COPY pom.xml ./
 RUN mvn dependency:go-offline
 
-# Copiar el código fuente y compilar
+# Copiar el codigo fuente y compilar
 COPY src ./src
-RUN mvn clean package -DskipTests
+RUN mvn clean package -DskipTests -X
 
 # Exponer el puerto 8010
 EXPOSE 8010
