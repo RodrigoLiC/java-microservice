@@ -73,3 +73,9 @@ La entidad `Inscripcion` tiene una relación `ManyToOne` con la entidad `Estudia
 #### Consideraciones
 
 - Al eliminar un estudiante, todas las inscripciones asociadas a dicho estudiante se eliminan para evitar errores de integridad referencial.
+
+
+- Se debe ejecutar el siguiente comando en la maquina del `db.host` para crear la base de datos
+```shell
+docker run -d --rm --name postgres_java_microservice -e POSTGRES_DB=javadb -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=utec -p 5432:5432 -d postgres
+```

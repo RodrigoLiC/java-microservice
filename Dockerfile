@@ -16,4 +16,4 @@ RUN mvn clean package -DskipTests -X
 EXPOSE 8010
 
 # Comando para ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "target/app.jar"]
+ENTRYPOINT ["java", "-jar", "target/cloudapi-0.0.2.jar"]
